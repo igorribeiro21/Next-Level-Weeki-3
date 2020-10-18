@@ -20,6 +20,7 @@ interface Orphanage {
   about: string;
   instructions: string;
   opening_hours: string;
+  whatsapp: string;
   open_on_weekends: boolean;
   images: Array<{
     id: number;
@@ -105,6 +106,7 @@ export default function OrphanageDetails() {
 
         <Text style={styles.title}>Instruções para visita</Text>
         <Text style={styles.description}>{orphanage.instructions}</Text>
+        <Text style={styles.description}>WhatsApp: {`(${orphanage.whatsapp.substring(0,2)})${orphanage.whatsapp.substring(2)}`}</Text>
 
         <View style={styles.scheduleContainer}>
           <View style={[styles.scheduleItem, styles.scheduleItemBlue]}>

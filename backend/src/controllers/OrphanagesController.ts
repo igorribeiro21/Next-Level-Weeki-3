@@ -29,7 +29,7 @@ export default {
     },
 
     async create(req: Request, res: Response) {
-        const { name, latitude, longitude, about, instructions, opening_hours, open_on_weekends } = req.body;
+        const { name, latitude, longitude, about, instructions, opening_hours, open_on_weekends,whatsapp } = req.body;
 
         const orphanagesRepository = getRepository(Orphanage);
 
@@ -38,7 +38,7 @@ export default {
             return { path: image.filename }
         });
 
-        const data = { name, latitude, longitude, about, instructions, opening_hours, open_on_weekends: open_on_weekends === 'true', images };
+        const data = { name, latitude, longitude, about,whatsapp, instructions, opening_hours, open_on_weekends: open_on_weekends === 'true', images };
 
         const schema = Yup.object().shape({
             name: Yup.string().required(),
@@ -46,6 +46,7 @@ export default {
             about: Yup.string().required().max(300),
             instructions: Yup.string().required(),
             opening_hours: Yup.string().required(),
+            whatsapp: Yup.string().required(),
             open_on_weekends: Yup.boolean().required(),
             image: Yup.array(Yup.object().shape({
                 path: Yup.string().required()

@@ -16,6 +16,7 @@ interface Orphanage {
   about: string,
   instructions: string,
   opening_hours: string,
+  whatsapp: string,
   open_on_weekends: string,
   images: Array<{
     url: string,
@@ -96,6 +97,7 @@ export default function Orphanage() {
 
             <h2>Instruções para visita</h2>
             <p>{orphanage.instructions}</p>
+            <p>WhatsApp: {`(${orphanage.whatsapp.substring(0,2)})${orphanage.whatsapp.substring(2)}`}</p>
 
             <div className="open-details">
               <div className="hour">
