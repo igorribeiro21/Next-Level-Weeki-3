@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#happy {
+    background-color: #12AFCB;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+
+#happy h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#happy .location {       
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#login {
+    width: 30%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 1349px;
+    top: 40px;
+}
+
+#login #div-login{
+    position: absolute;
+    width: 360px;
+    height: 430px;
+    left: 1000px;
+    top: 195px;
+    color: #5C8599;
+}
+
+#login input[type=text] {
+    
+    width: 360px;
+    height: 64px;
+    left: 1000px;
+    top: 299px;
+    
+    background: #F5F8FA;
+    /* Back / Lines in white */
+    
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 20px;   
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height */
+
+
+/* Texts / Base */
+
+color: #5C8599;
+    
+    
+}
+#login input[type=password] {
+    
+    width: 360px;
+    height: 64px;
+    left: 1000px;
+    top: 299px;
+    
+    background: #F5F8FA;
+    /* Back / Lines in white */
+    
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 20px;   
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height */
+
+
+/* Texts / Base */
+
+color: #5C8599;    
+}
+
+#login input[type=checkbox]{
+    
+    margin-top: 20px;
+width: 40px;
+height: 20px;
+}
+
+#login input[type=checkbox] #green {
+    
+    margin-top: 20px;
+    width: 40px;
+    height: 20px;
+    background: teal;
+    color: teal;
+}
+
+#btn {
+    color: #fff;
+    font-weight: bold;
+width: 360px;
+height: 64px;
+left: 1000px;
+top: 561px;
+
+/* Color / Green */
+
+background: #37C77F;
+border-radius: 20px;
+}
+
+#login h2{
+    margin-bottom: 20px;
+}
