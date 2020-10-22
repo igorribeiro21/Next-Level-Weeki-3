@@ -7,6 +7,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 function Login() {
+
     return (
         <div className="container">
             <div id="happy">
@@ -31,13 +32,22 @@ function Login() {
 
                     <label htmlFor="senha">Senha</label>
                     <input className="input-text" type="password" />
+                    <div id="lemb">
+                        <input type="checkbox" id="green" />
+                        <span>Lembrar-me</span>
 
-                    <input type="checkbox" id="green" />
-
+                        <a href="">Esqueci minha senha</a>
+                    </div>
                     <button type="submit" id="btn">Entrar</button>
                 </div>
             </div>
         </div>
     )
+}
+
+const styles = {
+    check: {
+        backgroundColor: '#5C8599'
+    }
 }
 export default Login;

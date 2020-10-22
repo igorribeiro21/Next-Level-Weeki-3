@@ -106,20 +106,21 @@ color: #5C8599;
 color: #5C8599;    
 }
 
-#login input[type=checkbox]{
-    
-    margin-top: 20px;
-width: 40px;
-height: 20px;
+#login #green {    
+    all: unset;
+    border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top:10px;
+  margin-right:10px
 }
 
-#login input[type=checkbox] #green {
-    
-    margin-top: 20px;
-    width: 40px;
+#login #green:checked {
+    background-color: #37C77F;
+    width: 20px;
     height: 20px;
-    background: teal;
-    color: teal;
+  
 }
 
 #btn {
@@ -138,4 +139,18 @@ border-radius: 20px;
 
 #login h2{
     margin-bottom: 20px;
+}
+
+#login a{
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#login #lemb {
+    margin-bottom: 20px;
+    
+}
+
+#login #lemb a{
+    color: #5C8599;
 }

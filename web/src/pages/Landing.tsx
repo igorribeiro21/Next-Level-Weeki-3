@@ -19,7 +19,13 @@ function Landing() {
                 <div className="location">
                     <strong>Franca</strong>
                     <span>São Paulo</span>
+
                 </div>
+                
+                    <a className="acesso" href="/login">Acesso restrito</a>
+                
+
+
 
                 <Link to="/app" className="enter-app">
                     <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
