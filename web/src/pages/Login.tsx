@@ -6,19 +6,16 @@ import logo from '../images/map-marker.svg';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+import Happy from '../utils/Happy';
+
 function Login() {
 
     return (
         <div className="container">
-            <div id="happy">
-                <img src={logo} alt="" />
-                <h1>happy</h1>
-
-                <div className="location">
-                    <strong>Franca</strong>
-                    <span>São Paulo</span>
-                </div>
+            <div>
+                <Happy />
             </div>
+
             <div id="login">
                 <Link to="/" id="left">
                     <FiArrowLeft size={26} color="#12AFCB" />
@@ -36,7 +33,7 @@ function Login() {
                         <input type="checkbox" id="green" />
                         <span>Lembrar-me</span>
 
-                        <a href="">Esqueci minha senha</a>
+                        <a href="/forgot-password">Esqueci minha senha</a>
                     </div>
                     <button type="submit" id="btn">Entrar</button>
                 </div>
